@@ -24,6 +24,7 @@ import ProductsCard from './Components/ProductsCard';
 import Welcome from './Components/Welcome';
 import ApiProducts from './Components/ApiProducts';
 import Profile from './Components/Profile';
+import ProductsList from './Components/ProductsList';
 //import Navbar from './Components/Navbar';
 //import Navbar from './Components/Navbar';
 
@@ -55,6 +56,8 @@ function App() {
         <Route path="/ApiProducts" element={<ApiProducts />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/ProductsList" element={<ProductsList />}/>
+
 
 
       </Routes>

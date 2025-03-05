@@ -25,9 +25,14 @@ import Welcome from './Components/Welcome';
 import ApiProducts from './Components/ApiProducts';
 import Profile from './Components/Profile';
 import ProductsList from './Components/ProductsList';
+import Catalog from './Components/Catalog';
 //import Navbar from './Components/Navbar';
 //import Navbar from './Components/Navbar';
-
+import Document from './Components/Document';
+import Video from './Components/Video';
+import OrderList from './Components/OrderList';
+import ProductMList from './Components/ProductMList';
+import UserMList from './Components/UserMList';
 
 function App() {
   const orderDetails=[
@@ -39,10 +44,17 @@ function App() {
   ]
 
 
+
+
+
   return (
     <Router>
 <Navbar> </Navbar>
+
       <Routes>
+        <Route path='/UsersList' element={<UserMList />} />
+        <Route path="/ProductsList" element={<ProductMList />} />
+        <Route path="/OrderList" element={<OrderList />} />
         <Route path="/" element={<Home />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/user" element={<User />} />
@@ -57,6 +69,12 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/ProductsList" element={<ProductsList />}/>
+        <Route path="/Catalog" element={<Catalog />} />
+        <Route path="/Document" element={<Document />} />
+        <Route path="/Video" element={<Video />} />
+
+        
+        
 
 
 
